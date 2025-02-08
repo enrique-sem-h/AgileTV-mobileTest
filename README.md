@@ -42,5 +42,5 @@ Communication between the View, ViewModel, and ViewController is handled through
 
 ### Contact
 For any questions, feel free to reach out:
-- Email: (carvalhoenrique33@gmail.com)
+- Email: carvalhoenrique33@gmail.com
 - LinkedIn: [Enrique Carvalho](https://www.linkedin.com/in/enrique-carvalho-bb075827a/)
