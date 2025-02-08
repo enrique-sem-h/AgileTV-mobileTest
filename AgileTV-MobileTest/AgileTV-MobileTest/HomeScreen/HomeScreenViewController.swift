@@ -7,6 +7,29 @@
 
 import UIKit
 
+protocol HomeScreenViewDelegate {
+    func handleButtonTap(username: String?)
+}
+
 class HomeScreenViewController: UIViewController {
     
+    // MARK: View lifecycle functions
+    override func loadView() {
+        self.view = HomeScreenView(delegate: self)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        self.title = "GitHub Viewer"
+    }
+}
+
+// MARK: Extension - View Delegate
+extension HomeScreenViewController: HomeScreenViewDelegate {
+    func handleButtonTap(username: String?) {
+        guard let username else { return }
+        self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Go Back", style: .plain, target: nil, action: nil) // this sets the navigation title in the next vc
+        self.navigationController?.pushViewController(HomeScreenViewController(), animated: true)
+    }
 }
