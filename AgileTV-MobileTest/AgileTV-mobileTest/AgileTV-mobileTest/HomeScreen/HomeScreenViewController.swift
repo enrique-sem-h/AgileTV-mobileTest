@@ -30,6 +30,8 @@ extension HomeScreenViewController: HomeScreenViewDelegate {
     func handleButtonTap(username: String?) {
         guard let username = username else { return }
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Go Back", style: .plain, target: nil, action: nil) // this sets the navigation title in the next vc
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.pushViewController(ProfileDetailViewController(username: username), animated: true)
     }
 }
