@@ -99,10 +99,6 @@ class ProfileDetailView: UIView {
     public func updateView(with user: User) {
         self.user = user
     }
-    
-    @objc private func fetchData() {
-        user = User(name: "John Doe", repositories: [Repository(name: "AA", language: "Swift"), Repository(name: "BB", language: "C#")])
-    }
 }
 
 // MARK: Extension - View Setup
