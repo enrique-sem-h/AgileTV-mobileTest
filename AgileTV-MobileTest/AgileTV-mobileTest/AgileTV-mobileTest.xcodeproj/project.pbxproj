@@ -12,6 +12,14 @@
 		CD517B732D5882F8003EAE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD517B712D5882F8003EAE50 /* LaunchScreen.storyboard */; };
 		CD517B7F2D58855B003EAE50 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B7E2D58855B003EAE50 /* HomeScreenViewController.swift */; };
 		CD517B822D5885A4003EAE50 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B812D5885A4003EAE50 /* HomeScreenView.swift */; };
+		CD517B882D588642003EAE50 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B872D588642003EAE50 /* User.swift */; };
+		CD517B8A2D58865C003EAE50 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B892D58865C003EAE50 /* Repository.swift */; };
+		CD517B8C2D58868F003EAE50 /* ProfileDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B8B2D58868F003EAE50 /* ProfileDetailViewModel.swift */; };
+		CD517B8E2D5886B7003EAE50 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B8D2D5886B7003EAE50 /* ProfileDetailView.swift */; };
+		CD517B912D5886CA003EAE50 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B902D5886CA003EAE50 /* Cell.swift */; };
+		CD517B932D5886EF003EAE50 /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B922D5886EF003EAE50 /* ProfileDetailViewController.swift */; };
+		CD517B972D588771003EAE50 /* FetchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B962D588771003EAE50 /* FetchError.swift */; };
+		CD517B992D58877A003EAE50 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B982D58877A003EAE50 /* ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		CD517B742D5882F8003EAE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD517B7E2D58855B003EAE50 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		CD517B812D5885A4003EAE50 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		CD517B872D588642003EAE50 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD517B892D58865C003EAE50 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CD517B8B2D58868F003EAE50 /* ProfileDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewModel.swift; sourceTree = "<group>"; };
+		CD517B8D2D5886B7003EAE50 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		CD517B902D5886CA003EAE50 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		CD517B922D5886EF003EAE50 /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		CD517B962D588771003EAE50 /* FetchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchError.swift; sourceTree = "<group>"; };
+		CD517B982D58877A003EAE50 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,8 @@
 			children = (
 				CD517B7A2D588368003EAE50 /* App */,
 				CD517B7D2D588544003EAE50 /* HomeScreen */,
+				CD517B832D588609003EAE50 /* ProfileDetail */,
+				CD517B952D588753003EAE50 /* Utilities */,
 				CD517B6F2D5882F8003EAE50 /* Assets.xcassets */,
 			);
 			path = "AgileTV-mobileTest";
@@ -86,6 +104,60 @@
 				CD517B812D5885A4003EAE50 /* HomeScreenView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		CD517B832D588609003EAE50 /* ProfileDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B862D58862E003EAE50 /* Model */,
+				CD517B852D588618003EAE50 /* ViewModel */,
+				CD517B842D588612003EAE50 /* View */,
+				CD517B922D5886EF003EAE50 /* ProfileDetailViewController.swift */,
+			);
+			path = ProfileDetail;
+			sourceTree = "<group>";
+		};
+		CD517B842D588612003EAE50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B8F2D5886BC003EAE50 /* Components */,
+				CD517B8D2D5886B7003EAE50 /* ProfileDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD517B852D588618003EAE50 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B8B2D58868F003EAE50 /* ProfileDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD517B862D58862E003EAE50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B872D588642003EAE50 /* User.swift */,
+				CD517B892D58865C003EAE50 /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CD517B8F2D5886BC003EAE50 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B902D5886CA003EAE50 /* Cell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CD517B952D588753003EAE50 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B962D588771003EAE50 /* FetchError.swift */,
+				CD517B982D58877A003EAE50 /* ViewCode.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +230,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD517B882D588642003EAE50 /* User.swift in Sources */,
+				CD517B932D5886EF003EAE50 /* ProfileDetailViewController.swift in Sources */,
 				CD517B822D5885A4003EAE50 /* HomeScreenView.swift in Sources */,
+				CD517B8A2D58865C003EAE50 /* Repository.swift in Sources */,
+				CD517B8C2D58868F003EAE50 /* ProfileDetailViewModel.swift in Sources */,
+				CD517B8E2D5886B7003EAE50 /* ProfileDetailView.swift in Sources */,
+				CD517B912D5886CA003EAE50 /* Cell.swift in Sources */,
+				CD517B972D588771003EAE50 /* FetchError.swift in Sources */,
+				CD517B992D58877A003EAE50 /* ViewCode.swift in Sources */,
 				CD517B692D5882F7003EAE50 /* AppDelegate.swift in Sources */,
 				CD517B7F2D58855B003EAE50 /* HomeScreenViewController.swift in Sources */,
 			);

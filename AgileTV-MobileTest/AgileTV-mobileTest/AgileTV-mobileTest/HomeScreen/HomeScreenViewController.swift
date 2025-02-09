@@ -28,7 +28,7 @@ class HomeScreenViewController: UIViewController {
 // MARK: Extension - View Delegate
 extension HomeScreenViewController: HomeScreenViewDelegate {
     func handleButtonTap(username: String?) {
-        //guard let username else { return }
+        guard let username = username else { return }
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "Go Back", style: .plain, target: nil, action: nil) // this sets the navigation title in the next vc
         self.navigationController?.pushViewController(ProfileDetailViewController(username: username), animated: true)
     }
