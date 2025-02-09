@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CD517B692D5882F7003EAE50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B682D5882F7003EAE50 /* AppDelegate.swift */; };
-		CD517B6B2D5882F7003EAE50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B6A2D5882F7003EAE50 /* ViewController.swift */; };
 		CD517B702D5882F8003EAE50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD517B6F2D5882F8003EAE50 /* Assets.xcassets */; };
 		CD517B732D5882F8003EAE50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD517B712D5882F8003EAE50 /* LaunchScreen.storyboard */; };
+		CD517B7F2D58855B003EAE50 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B7E2D58855B003EAE50 /* HomeScreenViewController.swift */; };
+		CD517B822D5885A4003EAE50 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD517B812D5885A4003EAE50 /* HomeScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD517B652D5882F7003EAE50 /* AgileTV-mobileTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AgileTV-mobileTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD517B682D5882F7003EAE50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD517B6A2D5882F7003EAE50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD517B6F2D5882F8003EAE50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD517B722D5882F8003EAE50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD517B742D5882F8003EAE50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD517B7E2D58855B003EAE50 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CD517B812D5885A4003EAE50 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				CD517B7A2D588368003EAE50 /* App */,
-				CD517B6A2D5882F7003EAE50 /* ViewController.swift */,
+				CD517B7D2D588544003EAE50 /* HomeScreen */,
 				CD517B6F2D5882F8003EAE50 /* Assets.xcassets */,
 			);
 			path = "AgileTV-mobileTest";
@@ -67,6 +69,23 @@
 				CD517B742D5882F8003EAE50 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CD517B7D2D588544003EAE50 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B802D588563003EAE50 /* View */,
+				CD517B7E2D58855B003EAE50 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		CD517B802D588563003EAE50 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD517B812D5885A4003EAE50 /* HomeScreenView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD517B6B2D5882F7003EAE50 /* ViewController.swift in Sources */,
+				CD517B822D5885A4003EAE50 /* HomeScreenView.swift in Sources */,
 				CD517B692D5882F7003EAE50 /* AppDelegate.swift in Sources */,
+				CD517B7F2D58855B003EAE50 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

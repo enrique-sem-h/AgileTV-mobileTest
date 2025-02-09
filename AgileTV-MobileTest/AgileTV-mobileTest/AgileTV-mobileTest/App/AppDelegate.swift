@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let nav = UINavigationController(rootViewController: ViewController())
+        let nav = UINavigationController(rootViewController: HomeScreenViewController())
         
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
