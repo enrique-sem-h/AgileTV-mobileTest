@@ -83,8 +83,8 @@ class ProfileDetailView: UIView {
         
         self.profilePicture.isHidden = false
         self.nameLabel.isHidden = false
-        divider.isHidden = false
-        repositoriesTableView.isHidden = false
+        self.divider.isHidden = false
+        self.repositoriesTableView.isHidden = false
         
         if let image = user.image {
             self.profilePicture.image = UIImage(data: image)
@@ -93,6 +93,10 @@ class ProfileDetailView: UIView {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.repositoriesTableView.reloadData()
+            if user.repositories != nil {
+            self.repositoriesTableView.beginUpdates()
+            self.repositoriesTableView.endUpdates()
+            }
         }
     }
     
