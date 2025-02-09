@@ -2,16 +2,14 @@
 This is a repository created for storing the Mobile Engineering Test for **AgileTV Junior iOS Developer Role**  
 **Candidate**: Enrique de Lima Carvalho
 
-> **_Note_**: I was unable to use Swift 3.x because my computer runs macOS Sequoia, and Swift 3 was discontinued around Mojave. I attempted using a VM but that would have compromised my delivery deadline.
-
 # Architecture
 This project demonstrates an MVVM-based iOS application that fetches user profile data from the GitHub remote API and displays it in a table.
 
 ---
 ## Requirements
-- **Xcode Version**: 14.x or higher
-- **Swift Version**: 4.x
-- **Minimum iOS Version**: 13.0
+- **Xcode Version**: 9.4.1
+- **Swift Version**: 3.3
+- **MacOS Version**: Mojave 10.14.6
 ---
 
 This project uses the Model-View-ViewModel `(MVVM)` architecture to ensure a clear separation of concerns:
